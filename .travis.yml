@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t spencern319/build_image -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true USERNAME/build_image npm run test -- --coverage
