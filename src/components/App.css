@@ -1,0 +1,46 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* refers to the cross axes */
+  justify-content: center; /* refers to the main axes */
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  background: cornflowerblue;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: cornflowerblue;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+.main-header > button {
+  height: 2.5rem;
+  width: 8rem;
+  margin: 0 1rem;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+}
+
+.form-input {
+  padding: 5px;
+  margin: 10px;
+  height: 3rem;
+}
+
+
+
